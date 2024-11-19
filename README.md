@@ -13,10 +13,10 @@ OpenSCAD customizer to generate containers for the [Multipoint](https://www.mult
 
 ## Contribution & Remixes
 
-1. Download [Multipoint Rails - STL Remixing Files](https://thangs.com/designer/Multiboard/3d-model/Multipoint%20Rails%20-%20STL%20Remixing%20Files-1142254) and copy the file *Lite Multipoint Rail - Negative.stl* into the folder of *Brother P-Touch Tapes Holder On Multipoint Rails*.
-2. load the file *Brother P-Touch Tapes Holder On Multipoint Rails.scad* into [OpenSCAD](https://openscad.org/).
+1. Download [Multipoint Rails - STL Remixing Files](https://thangs.com/designer/Multiboard/3d-model/Multipoint%20Rails%20-%20STL%20Remixing%20Files-1142254) and copy the file *Lite Multipoint Rail - Negative.stl* into the folder of *Containers On Multipoint Rails*.
+2. load the file *Containers On Multipoint Rails.scad* into [OpenSCAD](https://openscad.org/).
 3. open the customizer in the menu *Window → Customizer*.
-4. create your box and print it.
-   1. render the customized spacer plate via the key *F6* or menu *Design → Render*.
+4. create your container and print it.
+   1. render the customized container via the key *F6* or menu *Design → Render*.
    4. export the render via the key F7 or menu *File → Export → Export STL*.
 

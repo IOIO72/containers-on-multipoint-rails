@@ -16,3 +16,12 @@ This pack includes containers for the following cartridges:
 * TZe 36mm
 
 The containers are equipped with slots to slide onto the [Multipoint](https://www.multiboard.io/parts-library/multipoint/multipoints) rail system. You can mount them on a [Multiboard](https://www.multiboard.io/) or directly on a wall without a Multiboard.
+
+## Contribution
+
+There are two ways for contribution:
+
+1. Request containers for other purposes via GitHub and [open an issue](https://github.com/IOIO72/containers-on-multipoint-rails/issues/new/choose).
+2. Generate the containers yourself via [Containers on Multipoint Rails](https://github.com/IOIO72/containers-on-multipoint-rails).
+
+The reason why I do not publish a customizer on MakerWorld is the license of the required file *Lite Multipoint Rail - Negative.stl*, which you have to download yourself.

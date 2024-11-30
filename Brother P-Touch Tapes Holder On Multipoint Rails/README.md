@@ -1,4 +1,4 @@
-# Brother P-Touch Tapes Holder On Multipoint Rails
+# Brother P-Touch Tapes Holder On Multiboard's Multipoint Rails
 
 by IOIO72 aka Tamio Patrick Honma (https://honma.de)
 

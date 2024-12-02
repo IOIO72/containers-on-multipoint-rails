@@ -24,7 +24,7 @@ second_rail_above_grid = 0; // [0:3]
 
 /* [Hidden] */
 
-multiboard_grid_offset = 20;
+multiboard_grid_offset = 25;
 rail_position_offset = multiboard_grid_offset / 2;
 multipoint_rail_depth = 2;
 multipoint_rail_safe_zone = multipoint_rail_depth + back_wall;

@@ -204,6 +204,45 @@
             "side_walls": "2",
             "tolerance": "2",
             "width": "77"
+        },
+        "Samsung Remote": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "25",
+            "front_wall": "1.2",
+            "height": "60",
+            "second_rail_above_grid": "1",
+            "side_walls": "0.80000000000000004",
+            "tolerance": "2",
+            "width": "36"
+        },
+        "FeinTech Remote": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "12",
+            "front_wall": "1.2",
+            "height": "60",
+            "second_rail_above_grid": "1",
+            "side_walls": "0.80000000000000004",
+            "tolerance": "2",
+            "width": "37"
+        },
+        "Sony BlueRay Remote": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "21",
+            "front_wall": "1.2",
+            "height": "60",
+            "item_padding_bottom": "15",
+            "item_padding_left": "4",
+            "item_padding_right": "4",
+            "second_rail_above_grid": "1",
+            "side_walls": "0.80000000000000004",
+            "tolerance": "2",
+            "width": "46"
         }
     }
 }

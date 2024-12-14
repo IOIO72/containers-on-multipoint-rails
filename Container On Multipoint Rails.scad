@@ -22,6 +22,13 @@ bottom_rail_position = 2;
 second_rail_above_grid = 0; // [0:3]
 
 
+/* [Item Cutout] */
+
+item_padding_left = 0;
+item_padding_right = 0;
+item_padding_bottom = 0;
+
+
 /* [Hidden] */
 
 multiboard_grid_offset = 25;
@@ -36,6 +43,11 @@ tape_box_height = height + tolerance;
 box_width = tape_box_width + 2 * side_walls;
 box_depth = tape_box_depth + front_wall + multipoint_rail_safe_zone;
 box_height = tape_box_height + bottom_wall;
+
+cutout_width = tape_box_width - item_padding_left - item_padding_right;
+cutout_height = tape_box_height - item_padding_bottom;
+cutout_offset = side_walls + item_padding_right;
+cutout_vertical_offset = box_height - tape_box_height + item_padding_bottom;
 
 
 module rail(position = bottom_rail_position) {
@@ -58,6 +70,11 @@ difference() {
         }
         translate([side_walls, multipoint_rail_safe_zone, bottom_wall]) {
             cube([tape_box_width, tape_box_depth, tape_box_height]);
+        }
+        if (item_padding_left + item_padding_left + item_padding_bottom > 0) {
+            translate([cutout_offset, box_depth - front_wall, cutout_vertical_offset]) {
+                cube([cutout_width, front_wall, cutout_height]);
+            }
         }
     }
 }

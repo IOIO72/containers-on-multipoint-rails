@@ -18,9 +18,10 @@ bottom_wall = 1.4;
 
 /* [Rail Position] */
 
+top_vertical_rail_position = 2;
 bottom_rail_position = 2;
 second_rail_above_grid = 0; // [0:3]
-vertical_rail = false;
+rails_variation = "horizontal"; // ["horizontal", "vertical", "cross"]
 
 
 /* [Item Cutout] */
@@ -50,15 +51,17 @@ cutout_height = tape_box_height - item_padding_bottom;
 cutout_offset = side_walls + item_padding_right;
 cutout_vertical_offset = box_height - tape_box_height + item_padding_bottom;
 
+vertical_rail = rails_variation == "vertical";
+rail_position = vertical_rail ? top_vertical_rail_position : bottom_rail_position; 
 second_rail_distance = second_rail_above_grid * multiboard_grid_offset;
 rails_width = (second_rail_above_grid > 0) ? second_rail_distance / 2 : 0;
-vertical_top =  box_height - rail_position_offset - bottom_rail_position;
+vertical_top =  box_height - rail_position_offset - top_vertical_rail_position;
 vertical_center_origin = box_width / 2;
 
 
-module rail(position = bottom_rail_position, second = false, vertical = vertical_rail) {
+module rail(position = bottom_rail_position, second = false, vertical = vertical_rail, all_rails_width = rails_width) {
     if (vertical) {
-        translate([(position - bottom_rail_position) + vertical_center_origin - rails_width, 0, vertical_top]) {
+        translate([(position - top_vertical_rail_position) + vertical_center_origin - all_rails_width, 0, vertical_top]) {
         rotate([90, 0, 180]) {
                 import("Lite Multipoint Rail - Negative.stl", $fn=100);
             }
@@ -78,17 +81,20 @@ difference() {
         cube([box_width, box_depth, box_height]);
     }
     union() {
-        rail(bottom_rail_position);
+        rail(rail_position);
         if (second_rail_above_grid > 0) {
-            rail(bottom_rail_position + second_rail_distance, true);
+            rail(rail_position + second_rail_distance, true);
         }
         translate([side_walls, multipoint_rail_safe_zone, bottom_wall]) {
             cube([tape_box_width, tape_box_depth, tape_box_height]);
         }
-        if (item_padding_left + item_padding_left + item_padding_bottom > 0) {
+        if (item_padding_left + item_padding_left + top_vertical_rail_position > 0) {
             translate([cutout_offset, box_depth - front_wall, cutout_vertical_offset]) {
                 cube([cutout_width, front_wall, cutout_height]);
             }
+        }
+        if (rails_variation == "cross") {
+            rail(top_vertical_rail_position, false, true, 0);
         }
     }
 }

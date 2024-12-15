@@ -20,6 +20,7 @@ bottom_wall = 1.4;
 
 bottom_rail_position = 2;
 second_rail_above_grid = 0; // [0:3]
+vertical_rail = false;
 
 
 /* [Item Cutout] */
@@ -49,11 +50,24 @@ cutout_height = tape_box_height - item_padding_bottom;
 cutout_offset = side_walls + item_padding_right;
 cutout_vertical_offset = box_height - tape_box_height + item_padding_bottom;
 
+second_rail_distance = second_rail_above_grid * multiboard_grid_offset;
+rails_width = (second_rail_above_grid > 0) ? second_rail_distance / 2 : 0;
+vertical_top =  box_height - rail_position_offset - bottom_rail_position;
+vertical_center_origin = box_width / 2;
 
-module rail(position = bottom_rail_position) {
-    translate([0, 0, rail_position_offset + position]) {
-        rotate([0, 90, 90]) {
-            import("Lite Multipoint Rail - Negative.stl", $fn=100);
+
+module rail(position = bottom_rail_position, second = false, vertical = vertical_rail) {
+    if (vertical) {
+        translate([(position - bottom_rail_position) + vertical_center_origin - rails_width, 0, vertical_top]) {
+        rotate([90, 0, 180]) {
+                import("Lite Multipoint Rail - Negative.stl", $fn=100);
+            }
+        }
+    } else {
+        translate([0, 0, rail_position_offset + position]) {
+            rotate([0, 90, 90]) {
+                import("Lite Multipoint Rail - Negative.stl", $fn=100);
+            }
         }
     }
 }
@@ -66,7 +80,7 @@ difference() {
     union() {
         rail(bottom_rail_position);
         if (second_rail_above_grid > 0) {
-            rail(bottom_rail_position + second_rail_above_grid * multiboard_grid_offset);
+            rail(bottom_rail_position + second_rail_distance, true);
         }
         translate([side_walls, multipoint_rail_safe_zone, bottom_wall]) {
             cube([tape_box_width, tape_box_depth, tape_box_height]);

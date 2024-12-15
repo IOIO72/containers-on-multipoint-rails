@@ -243,6 +243,38 @@
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "46"
+        },
+        "Neue Parameter Liste1": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "15",
+            "front_wall": "1.2",
+            "height": "60",
+            "item_padding_bottom": "0",
+            "item_padding_left": "0",
+            "item_padding_right": "0",
+            "second_rail_above_grid": "0",
+            "side_walls": "0.80000000000000004",
+            "tolerance": "2",
+            "vertical_rail": "true",
+            "width": "55"
+        },
+        "Nagelscherenetuit": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "15",
+            "front_wall": "1.2",
+            "height": "60",
+            "item_padding_bottom": "0",
+            "item_padding_left": "0",
+            "item_padding_right": "0",
+            "second_rail_above_grid": "0",
+            "side_walls": "0.80000000000000004",
+            "tolerance": "2",
+            "vertical_rail": "true",
+            "width": "55"
         }
     }
 }

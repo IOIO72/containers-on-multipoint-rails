@@ -271,7 +271,7 @@
             "item_padding_bottom": "0",
             "item_padding_left": "0",
             "item_padding_right": "0",
-            "rails_variation": "cross",
+            "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",

@@ -78,7 +78,7 @@ module rail(position = bottom_rail_position, second = false, vertical = vertical
 
 difference() {
     union() {
-        cube([box_width, box_depth, box_height]);
+        cube([box_width, box_depth - 1, box_height]);
     }
     union() {
         rail(rail_position);
@@ -91,7 +91,7 @@ difference() {
         translate([side_walls, multipoint_rail_safe_zone, bottom_wall]) {
             cube([tape_box_width, tape_box_depth, tape_box_height]);
         }
-        if (item_padding_left + item_padding_left + item_padding_bottom > 0) {
+        if (item_padding_left + item_padding_left + top_vertical_rail_position > 0) {
             translate([cutout_offset, box_depth - front_wall, cutout_vertical_offset]) {
                 cube([cutout_width, front_wall, cutout_height]);
             }

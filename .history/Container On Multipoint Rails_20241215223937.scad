@@ -85,16 +85,16 @@ difference() {
         if (second_rail_above_grid > 0) {
             rail(rail_position + second_rail_distance, true);
         }
-        if (rails_variation == "cross") {
-            rail(top_vertical_rail_position, false, true, 0);
-        }
         translate([side_walls, multipoint_rail_safe_zone, bottom_wall]) {
             cube([tape_box_width, tape_box_depth, tape_box_height]);
         }
-        if (item_padding_left + item_padding_left + item_padding_bottom > 0) {
+        if (item_padding_left + item_padding_left + top_vertical_rail_position > 0) {
             translate([cutout_offset, box_depth - front_wall, cutout_vertical_offset]) {
                 cube([cutout_width, front_wall, cutout_height]);
             }
+        }
+        if (rails_variation == "cross") {
+            rail(top_vertical_rail_position, false, true, 0);
         }
     }
 }

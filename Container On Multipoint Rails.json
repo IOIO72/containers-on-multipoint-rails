@@ -277,6 +277,40 @@
             "tolerance": "2",
             "top_vertical_rail_position": "2",
             "width": "55"
+        },
+        "Neue Parameter Liste2": {
+            "back_wall": "2",
+            "bottom_rail_position": "2",
+            "bottom_wall": "2",
+            "depth": "45",
+            "front_wall": "2",
+            "height": "50",
+            "item_padding_bottom": "0",
+            "item_padding_left": "0",
+            "item_padding_right": "0",
+            "rails_variation": "horizontal",
+            "second_rail_above_grid": "1",
+            "side_walls": "2",
+            "tolerance": "2",
+            "top_vertical_rail_position": "2",
+            "width": "45"
+        },
+        "Fanttik NEX E1 Max": {
+            "back_wall": "2",
+            "bottom_rail_position": "2",
+            "bottom_wall": "2",
+            "depth": "45",
+            "front_wall": "2",
+            "height": "50",
+            "item_padding_bottom": "0",
+            "item_padding_left": "0",
+            "item_padding_right": "0",
+            "rails_variation": "horizontal",
+            "second_rail_above_grid": "1",
+            "side_walls": "2",
+            "tolerance": "2",
+            "top_vertical_rail_position": "2",
+            "width": "45"
         }
     }
 }

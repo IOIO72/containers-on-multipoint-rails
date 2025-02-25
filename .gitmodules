@@ -1,0 +1,3 @@
+[submodule "openscad-parameter-set-generator"]
+	path = openscad-parameter-set-generator
+	url = https://github.com/IOIO72/openscad-parameter-set-generator.git

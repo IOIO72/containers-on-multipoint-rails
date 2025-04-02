@@ -314,6 +314,23 @@
             "top_vertical_rail_position": "2",
             "width": "120"
         },
+        "Küchenschrank-Box Cutout (tief, breit)": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "90",
+            "front_wall": "1.2",
+            "height": "70",
+            "item_padding_bottom": "35",
+            "item_padding_left": "15",
+            "item_padding_right": "15",
+            "rails_variation": "horizontal",
+            "second_rail_above_grid": "1",
+            "side_walls": "1.2",
+            "tolerance": "2",
+            "top_vertical_rail_position": "2",
+            "width": "120"
+        },
         "Küchenschrank-Box (tief, breit)": {
             "back_wall": "1.8",
             "bottom_rail_position": "2",

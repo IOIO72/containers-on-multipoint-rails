@@ -1,7 +1,8 @@
 // Brother P-Touch Tapes Holder On Multipoint Rails
 
-/* [Tape Box] */
+/* [Content Shape] */
 
+shape = "Box"; // ["Box", "Cylinder"]
 width = 17;
 depth = 68;
 height = 40;
@@ -58,6 +59,7 @@ rails_width = (second_rail_above_grid > 0) ? second_rail_distance / 2 : 0;
 vertical_top =  box_height - rail_position_offset - top_vertical_rail_position;
 vertical_center_origin = box_width / 2;
 
+$fn = 100;
 
 module rail(position = bottom_rail_position, second = false, vertical = vertical_rail, all_rails_width = rails_width) {
     if (vertical) {
@@ -75,10 +77,20 @@ module rail(position = bottom_rail_position, second = false, vertical = vertical
     }
 }
 
+module elliptical_cylinder(elliptic_width, elliptic_depth, cylinder_height) {
+    translate([elliptic_width / 2, elliptic_depth / 2, 0]) 
+    resize([elliptic_width, elliptic_depth, cylinder_height])
+    cylinder(r = elliptic_width / 2, h = cylinder_height);
+}
 
 difference() {
     union() {
-        cube([box_width, box_depth, box_height]);
+        if (shape == "Cylinder") {
+            elliptical_cylinder(box_width, box_depth, box_height);
+            cube([box_width, multipoint_rail_safe_zone, box_height]);
+        } else {
+            cube([box_width, box_depth, box_height]);
+        }
     }
     union() {
         rail(rail_position);
@@ -89,7 +101,11 @@ difference() {
             rail(top_vertical_rail_position, false, true, 0);
         }
         translate([side_walls, multipoint_rail_safe_zone, bottom_wall]) {
-            cube([tape_box_width, tape_box_depth, tape_box_height]);
+            if (shape == "Cylinder") {
+                elliptical_cylinder(tape_box_width, tape_box_depth, tape_box_height);
+            } else {
+                cube([tape_box_width, tape_box_depth, tape_box_height]);
+            }
         }
         if (item_padding_left + item_padding_left + item_padding_bottom > 0) {
             translate([cutout_offset, box_depth - front_wall, cutout_vertical_offset]) {

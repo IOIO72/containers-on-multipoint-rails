@@ -10,6 +10,7 @@
             "height": "40",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -23,6 +24,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "23"
@@ -35,6 +37,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "29"
@@ -47,6 +50,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "41"
@@ -59,6 +63,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "17"
@@ -71,6 +76,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "23"
@@ -83,6 +89,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "29"
@@ -95,6 +102,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "41"
@@ -107,6 +115,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "17"
@@ -119,6 +128,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "23"
@@ -131,6 +141,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "29"
@@ -143,6 +154,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "41"
@@ -155,6 +167,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "17"
@@ -167,6 +180,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "23"
@@ -179,6 +193,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "29"
@@ -191,6 +206,7 @@
             "front_wall": "1.2",
             "height": "40",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "41"
@@ -203,6 +219,7 @@
             "front_wall": "2",
             "height": "70",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "2",
             "tolerance": "2",
             "width": "77"
@@ -215,6 +232,7 @@
             "front_wall": "1.2",
             "height": "60",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "36"
@@ -227,6 +245,7 @@
             "front_wall": "1.2",
             "height": "60",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "37"
@@ -242,6 +261,7 @@
             "item_padding_left": "4",
             "item_padding_right": "4",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "width": "46"
@@ -258,6 +278,7 @@
             "item_padding_right": "0",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "0.80000000000000004",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -275,6 +296,7 @@
             "item_padding_right": "0",
             "rails_variation": "vertical",
             "second_rail_above_grid": "0",
+            "shape": "Box",
             "side_walls": "2",
             "tolerance": "2",
             "top_vertical_rail_position": "0",
@@ -292,6 +314,7 @@
             "item_padding_right": "0",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -309,6 +332,7 @@
             "item_padding_right": "15",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -326,6 +350,7 @@
             "item_padding_right": "15",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -343,6 +368,7 @@
             "item_padding_right": "0",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -360,6 +386,7 @@
             "item_padding_right": "0",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -377,6 +404,7 @@
             "item_padding_right": "15",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -394,6 +422,7 @@
             "item_padding_right": "0",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
@@ -411,10 +440,29 @@
             "item_padding_right": "10",
             "rails_variation": "horizontal",
             "second_rail_above_grid": "1",
+            "shape": "Box",
             "side_walls": "1.2",
             "tolerance": "2",
             "top_vertical_rail_position": "2",
             "width": "60"
+        },
+        "Bottle 30": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "32",
+            "front_wall": "1.2",
+            "height": "25",
+            "item_padding_bottom": "0",
+            "item_padding_left": "0",
+            "item_padding_right": "0",
+            "rails_variation": "horizontal",
+            "second_rail_above_grid": "0",
+            "shape": "Cylinder",
+            "side_walls": "1.2",
+            "tolerance": "2",
+            "top_vertical_rail_position": "2",
+            "width": "32"
         }
     }
 }

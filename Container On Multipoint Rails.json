@@ -499,6 +499,24 @@
             "tolerance": "2",
             "top_vertical_rail_position": "2",
             "width": "26"
+        },
+        "Brillenetuitbox (fest)": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "0",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "30",
+            "front_wall": "1.2",
+            "height": "70",
+            "item_padding_bottom": "10",
+            "item_padding_left": "10",
+            "item_padding_right": "10",
+            "rails_variation": "horizontal",
+            "second_rail_above_grid": "2",
+            "shape": "Box",
+            "side_walls": "0.80000000000000004",
+            "tolerance": "2",
+            "top_vertical_rail_position": "2",
+            "width": "68"
         }
     }
 }

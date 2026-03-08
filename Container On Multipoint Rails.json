@@ -535,6 +535,24 @@
             "tolerance": "2",
             "top_vertical_rail_position": "2",
             "width": "69"
+        },
+        "Samsung Smart Control": {
+            "back_wall": "1.8",
+            "bottom_rail_position": "2",
+            "bottom_wall": "1.3999999999999999",
+            "depth": "14",
+            "front_wall": "1.2",
+            "height": "50",
+            "item_padding_bottom": "4",
+            "item_padding_left": "3",
+            "item_padding_right": "3",
+            "rails_variation": "horizontal",
+            "second_rail_above_grid": "1",
+            "shape": "Box",
+            "side_walls": "0.80000000000000004",
+            "tolerance": "2",
+            "top_vertical_rail_position": "2",
+            "width": "38"
         }
     }
 }
